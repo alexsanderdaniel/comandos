@@ -1,57 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sequências de trabalho para criar, versionar, publicar, executar e diagnosticar projetos.">
-<meta name="author" content="Alexsander Daniel">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Sequências de trabalho para criar, versionar, publicar, executar e diagnosticar projetos." name="description"/>
+<meta content="Alexsander Daniel" name="author"/>
 <title>Fluxos do dia a dia | Central de Comandos</title>
-<link rel="stylesheet" href="assets/style.css">
+<link href="assets/style.css" rel="stylesheet"/>
 </head>
 <body data-page="fluxos">
 <div class="scroll-progress" id="scrollProgress"></div>
 <header class="site-header">
-  <div class="shell header-row">
-    <a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
-    <nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="active" href="fluxos.html">Fluxos</a></nav>
-    <div class="header-actions">
-      <button id="globalSearchBtn" class="header-btn" type="button" title="Pesquisar">⌕</button>
-      <button id="themeBtn" class="header-btn" type="button" title="Alternar tema">◐</button>
-      <button id="menuBtn" class="header-btn mobile-only" type="button" aria-label="Abrir menu">☰</button>
-    </div>
-  </div>
-  <nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="active" href="fluxos.html">Fluxos</a></nav>
+<div class="shell header-row">
+<a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
+<nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="active" href="fluxos.html">Fluxos</a></nav>
+<div class="header-actions">
+<button class="header-btn" id="globalSearchBtn" title="Pesquisar" type="button">⌕</button>
+<button class="header-btn" id="themeBtn" title="Alternar tema" type="button">◐</button>
+<button aria-label="Abrir menu" class="header-btn mobile-only" id="menuBtn" type="button">☰</button>
+</div>
+</div>
+<nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="active" href="fluxos.html">Fluxos</a></nav>
 </header>
-
 <main>
 <section class="page-hero">
-  <div class="shell">
-    <div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>Fluxos do dia a dia</span></div>
-    <span class="kicker">CHECKLISTS PRÁTICOS</span>
-    <h1>Fluxos do dia a dia</h1>
-    <p>Sequências de trabalho para criar, versionar, publicar, executar e diagnosticar projetos.</p>
-    
-  </div>
+<div class="shell">
+<div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>Fluxos do dia a dia</span></div>
+<span class="kicker">CHECKLISTS PRÁTICOS</span>
+<h1>Fluxos do dia a dia</h1>
+<p>Sequências de trabalho para criar, versionar, publicar, executar e diagnosticar projetos.</p>
+</div>
 </section>
-
 <section class="shell local-tools">
-  <div class="local-search"><span>⌕</span><input id="pageSearch" type="search" placeholder="Pesquisar nesta página..." autocomplete="off"><kbd>/</kbd></div>
-  <div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
+<div class="local-search"><span>⌕</span><input autocomplete="off" id="pageSearch" placeholder="Pesquisar nesta página..." type="search"/><kbd>/</kbd></div>
+<div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
 </section>
-
 <section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item wide" data-search="Novo projeto estático → GitHub fluxo checklist Novo projeto estático → GitHub"><div class="card-title"><span class="badge">Fluxo 1</span><h2>Novo projeto estático → GitHub</h2></div><ol class="step-list"><li><span>1</span><div>Abra o terminal na pasta do projeto.</div></li><li><span>2</span><div>Execute <code>git init</code>.</div></li><li><span>3</span><div>Execute <code>git add .</code>.</div></li><li><span>4</span><div>Crie o primeiro commit.</div></li><li><span>5</span><div>Crie um repositório vazio no GitHub.</div></li><li><span>6</span><div>Configure <code>origin</code>.</div></li><li><span>7</span><div>Faça <code>git push -u origin main</code>.</div></li></ol></article><article class="doc-card search-item" data-search="Alterar e enviar uma nova versão fluxo checklist Alterar e enviar uma nova versão"><div class="card-title"><span class="badge">Fluxo 2</span><h2>Alterar e enviar uma nova versão</h2></div><ol class="step-list"><li><span>1</span><div>Use <code>git status</code>.</div></li><li><span>2</span><div>Revise alterações com <code>git diff</code>.</div></li><li><span>3</span><div>Execute <code>git add .</code>.</div></li><li><span>4</span><div>Crie um commit com mensagem clara.</div></li><li><span>5</span><div>Execute <code>git push</code>.</div></li></ol></article><article class="doc-card search-item wide" data-search="Publicar HTML/CSS/JS no GitHub Pages fluxo checklist Publicar HTML/CSS/JS no GitHub Pages"><div class="card-title"><span class="badge">Fluxo 3</span><h2>Publicar HTML/CSS/JS no GitHub Pages</h2></div><ol class="step-list"><li><span>1</span><div>Envie o projeto para a branch <code>main</code>.</div></li><li><span>2</span><div>No GitHub, abra Settings → Pages.</div></li><li><span>3</span><div>Selecione Deploy from a branch.</div></li><li><span>4</span><div>Escolha main e /(root).</div></li><li><span>5</span><div>Aguarde a URL publicada.</div></li></ol></article><article class="doc-card search-item" data-search="Trabalhar em uma nova funcionalidade fluxo checklist Trabalhar em uma nova funcionalidade"><div class="card-title"><span class="badge">Fluxo 4</span><h2>Trabalhar em uma nova funcionalidade</h2></div><ol class="step-list"><li><span>1</span><div>Atualize <code>main</code> com <code>git pull</code>.</div></li><li><span>2</span><div>Crie uma branch com <code>git switch -c nome</code>.</div></li><li><span>3</span><div>Faça alterações e commits.</div></li><li><span>4</span><div>Envie com <code>git push -u origin nome</code>.</div></li><li><span>5</span><div>Abra um Pull Request.</div></li><li><span>6</span><div>Após revisar, faça o merge.</div></li></ol></article><article class="doc-card search-item" data-search="Clonar um projeto em outro computador fluxo checklist Clonar um projeto em outro computador"><div class="card-title"><span class="badge">Fluxo 5</span><h2>Clonar um projeto em outro computador</h2></div><ol class="step-list"><li><span>1</span><div>Copie a URL do repositório.</div></li><li><span>2</span><div>Execute <code>git clone URL</code>.</div></li><li><span>3</span><div>Entre na pasta com <code>cd projeto</code>.</div></li><li><span>4</span><div>Confira com <code>git status</code>.</div></li></ol></article><article class="doc-card search-item" data-search="Rodar um projeto PHP no XAMPP fluxo checklist Rodar um projeto PHP no XAMPP"><div class="card-title"><span class="badge">Fluxo 6</span><h2>Rodar um projeto PHP no XAMPP</h2></div><ol class="step-list"><li><span>1</span><div>Pare serviços conflitantes se necessário.</div></li><li><span>2</span><div>Inicie o XAMPP.</div></li><li><span>3</span><div>Coloque o projeto em <code>/opt/lampp/htdocs/</code>.</div></li><li><span>4</span><div>Acesse <code>http://localhost/NOME/</code>.</div></li><li><span>5</span><div>Use phpMyAdmin se o projeto tiver banco local.</div></li></ol></article><article class="doc-card search-item" data-search="Descobrir por que o XAMPP não inicia fluxo checklist Descobrir por que o XAMPP não inicia"><div class="card-title"><span class="badge">Fluxo 7</span><h2>Descobrir por que o XAMPP não inicia</h2></div><ol class="step-list"><li><span>1</span><div>Execute <code>lampp status</code>.</div></li><li><span>2</span><div>Verifique portas 80, 443 e 3306.</div></li><li><span>3</span><div>Teste o Apache com <code>httpd -t</code>.</div></li><li><span>4</span><div>Leia o log do Apache.</div></li><li><span>5</span><div>Leia o log do MySQL.</div></li></ol></article><article class="doc-card search-item" data-search="Antes de apagar ou desfazer fluxo checklist Antes de apagar ou desfazer"><div class="card-title"><span class="badge">Fluxo 8</span><h2>Antes de apagar ou desfazer</h2></div><ol class="step-list"><li><span>1</span><div>Confirme onde você está com <code>pwd</code>.</div></li><li><span>2</span><div>Confira arquivos com <code>ls</code> ou <code>git status</code>.</div></li><li><span>3</span><div>Prefira operações reversíveis.</div></li><li><span>4</span><div>Só use comandos destrutivos quando entender o impacto.</div></li></ol></article></section>
 </main>
-
 <footer class="site-footer">
-  <div class="shell footer-grid">
-    <div class="footer-profile"><img src="https://avatars.githubusercontent.com/u/104946213?v=4" alt="Foto de Alexsander Daniel no GitHub"><div><strong>Alexsander Daniel</strong><span>Material de consulta para desenvolvimento web</span></div></div>
-    <div class="footer-social"><a href="https://wa.me/5538999306760" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" target="_blank" rel="noopener">GitHub</a></div>
-  </div>
-  <div class="shell footer-bottom"><span>Feito apenas com HTML, CSS e JavaScript.</span><span>Compatível com GitHub Pages.</span></div>
-</footer>
+<div class="shell footer-grid">
+<div class="footer-profile"><img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/><div><strong>Alexsander Daniel</strong><span>Material para consulta</span></div></div>
+<div class="footer-social"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">GitHub</a></div>
+</div>
 
-<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" type="search" placeholder="Ex.: git push, localhost, SELECT, npm install..."><div id="globalResults" class="global-results"></div><small>Pressione Esc para fechar.</small></div></div>
+</footer>
+<div aria-hidden="true" class="search-modal" id="searchModal"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" placeholder="Ex.: git push, localhost, SELECT, npm install..." type="search"/><div class="global-results" id="globalResults"></div><small>Pressione Esc para fechar.</small></div></div>
 <div class="toast" id="toast">Copiado!</div>
-<button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+<button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">↑</button>
 <script src="assets/script.js"></script>
 </body></html>
