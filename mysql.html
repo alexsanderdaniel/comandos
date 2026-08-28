@@ -1,45 +1,43 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Comandos SQL para criar estruturas, inserir, consultar, atualizar e relacionar dados.">
-<meta name="author" content="Alexsander Daniel">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Comandos SQL para criar estruturas, inserir, consultar, atualizar e relacionar dados." name="description"/>
+<meta content="Alexsander Daniel" name="author"/>
 <title>MySQL | Central de Comandos</title>
-<link rel="stylesheet" href="assets/style.css">
+<link href="assets/style.css" rel="stylesheet"/>
 </head>
 <body data-page="mysql">
 <div class="scroll-progress" id="scrollProgress"></div>
 <header class="site-header">
-  <div class="shell header-row">
-    <a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
-    <nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="active" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-    <div class="header-actions">
-      <button id="globalSearchBtn" class="header-btn" type="button" title="Pesquisar">⌕</button>
-      <button id="themeBtn" class="header-btn" type="button" title="Alternar tema">◐</button>
-      <button id="menuBtn" class="header-btn mobile-only" type="button" aria-label="Abrir menu">☰</button>
-    </div>
-  </div>
-  <nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="active" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+<div class="shell header-row">
+<a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
+<nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="active" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+<div class="header-actions">
+<button class="header-btn" id="globalSearchBtn" title="Pesquisar" type="button">⌕</button>
+<button class="header-btn" id="themeBtn" title="Alternar tema" type="button">◐</button>
+<button aria-label="Abrir menu" class="header-btn mobile-only" id="menuBtn" type="button">☰</button>
+</div>
+</div>
+<nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="active" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
 </header>
-
 <main>
 <section class="page-hero">
-  <div class="shell">
-    <div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>MySQL</span></div>
-    <span class="kicker">BANCO DE DADOS</span>
-    <h1>MySQL</h1>
-    <p>Comandos SQL para criar estruturas, inserir, consultar, atualizar e relacionar dados.</p>
-    <div class="hero-note">A página é estática e compatível com GitHub Pages; o MySQL aparece apenas como material de referência.</div>
-  </div>
+<div class="shell">
+<div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>MySQL</span></div>
+<span class="kicker">BANCO DE DADOS</span>
+<h1>MySQL</h1>
+<p>Comandos SQL para criar estruturas, inserir, consultar, atualizar e relacionar dados.</p>
+<div class="hero-note">A página é estática e compatível com GitHub Pages; o MySQL aparece apenas como material de referência.</div>
+</div>
 </section>
-
 <section class="shell local-tools">
-  <div class="local-search"><span>⌕</span><input id="pageSearch" type="search" placeholder="Pesquisar nesta página..." autocomplete="off"><kbd>/</kbd></div>
-  <div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
+<div class="local-search"><span>⌕</span><input autocomplete="off" id="pageSearch" placeholder="Pesquisar nesta página..." type="search"/><kbd>/</kbd></div>
+<div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
 </section>
-
-<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item wide" data-search="Importante: MySQL e GitHub Pages github pages mysql banco nao executa"><div class="card-title"><span class="badge">Atenção</span><h2>Importante: MySQL e GitHub Pages</h2></div><div class="callout warning"><strong>Conteúdo de referência</strong><p>GitHub Pages não fornece um servidor MySQL. Os comandos abaixo são apresentados somente para estudo e consulta.</p></div></article><article class="doc-card search-item" data-search="Acessar pelo terminal mysql terminal root show databases use tables describe"><div class="card-title"><span class="badge">Terminal</span><h2>Acessar pelo terminal</h2></div><div class="cmd-row"><code>mysql -u root -p</code><span>Abre o cliente MySQL solicitando senha.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>SHOW DATABASES;</code><span>Lista bancos.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>USE nome_banco;</code><span>Seleciona um banco.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>SHOW TABLES;</code><span>Lista tabelas.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>DESCRIBE nome_tabela;</code><span>Mostra a estrutura.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>exit</code><span>Sai do cliente.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Criar banco e tabela create database table primary key auto increment varchar"><div class="card-title"><span class="badge">DDL</span><h2>Criar banco e tabela</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>CREATE DATABASE empresa;
+<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item wide" data-search="Importante: MySQL e GitHub Pages github pages mysql banco nao executa"><div class="card-title"><span class="badge">Atenção</span><h2>Importante: MySQL e GitHub Pages</h2></div><div class="callout warning"><strong>Conteúdo de referência</strong><p>GitHub Pages não fornece um servidor MySQL. Os comandos abaixo são apresentados somente para estudo e consulta.</p></div></article><article class="doc-card search-item" data-search="Acessar pelo terminal mysql terminal root show databases use tables describe"><div class="card-title"><span class="badge">Terminal</span><h2>Acessar pelo terminal</h2></div><div class="cmd-row"><code>mysql -u root -p</code><span>Abre o cliente MySQL solicitando senha.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>SHOW DATABASES;</code><span>Lista bancos.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>USE nome_banco;</code><span>Seleciona um banco.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>SHOW TABLES;</code><span>Lista tabelas.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>DESCRIBE nome_tabela;</code><span>Mostra a estrutura.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>exit</code><span>Sai do cliente.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div></article><article class="doc-card search-item" data-search="Criar banco e tabela create database table primary key auto increment varchar"><div class="card-title"><span class="badge">DDL</span><h2>Criar banco e tabela</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>CREATE DATABASE empresa;
 USE empresa;
 
 CREATE TABLE cliente (
@@ -47,10 +45,10 @@ CREATE TABLE cliente (
   nome VARCHAR(100) NOT NULL,
   email VARCHAR(150) UNIQUE
 );</code></pre></div></article><article class="doc-card search-item" data-search="Inserir dados insert into values dados"><div class="card-title"><span class="badge">INSERT</span><h2>Inserir dados</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>INSERT INTO cliente (nome, email)
-VALUES (&#x27;Ana&#x27;, &#x27;ana@email.com&#x27;);</code></pre></div></article><article class="doc-card search-item" data-search="Consultar dados select where order by consulta"><div class="card-title"><span class="badge">SELECT</span><h2>Consultar dados</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>SELECT * FROM cliente;
+VALUES ('Ana', 'ana@email.com');</code></pre></div></article><article class="doc-card search-item" data-search="Consultar dados select where order by consulta"><div class="card-title"><span class="badge">SELECT</span><h2>Consultar dados</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>SELECT * FROM cliente;
 SELECT nome, email FROM cliente ORDER BY nome;
 SELECT * FROM cliente WHERE id = 1;</code></pre></div></article><article class="doc-card search-item" data-search="Atualizar e excluir update delete where"><div class="card-title"><span class="badge">DML</span><h2>Atualizar e excluir</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>UPDATE cliente
-SET email = &#x27;novo@email.com&#x27;
+SET email = 'novo@email.com'
 WHERE id = 1;
 
 DELETE FROM cliente WHERE id = 1;</code></pre></div><div class="callout danger"><strong>Atenção</strong><p>Em <code>UPDATE</code> e <code>DELETE</code>, confira o <code>WHERE</code> antes de executar para evitar alterar todos os registros.</p></div></article><article class="doc-card search-item" data-search="Chave estrangeira foreign key relacionamento pedido cliente"><div class="card-title"><span class="badge">Relacionamento</span><h2>Chave estrangeira</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>CREATE TABLE pedido (
@@ -60,19 +58,17 @@ DELETE FROM cliente WHERE id = 1;</code></pre></div><div class="callout danger">
   FOREIGN KEY (cliente_id) REFERENCES cliente(id)
 );</code></pre></div></article><article class="doc-card search-item" data-search="JOIN inner join relacionamento consulta"><div class="card-title"><span class="badge">Consulta</span><h2>JOIN</h2></div><div class="code-box"><div class="code-top"><span>SQL</span><button class="copy" type="button">Copiar</button></div><pre><code>SELECT p.id, c.nome, p.data_pedido
 FROM pedido p
-INNER JOIN cliente c ON c.id = p.cliente_id;</code></pre></div></article><article class="doc-card search-item" data-search="Alterar estrutura alter table add modify drop column"><div class="card-title"><span class="badge">DDL</span><h2>Alterar estrutura</h2></div><div class="cmd-row"><code>ALTER TABLE cliente ADD telefone VARCHAR(20);</code><span>Adiciona coluna.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>ALTER TABLE cliente MODIFY nome VARCHAR(150);</code><span>Altera definição.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>ALTER TABLE cliente DROP COLUMN telefone;</code><span>Remove coluna.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article></section>
+INNER JOIN cliente c ON c.id = p.cliente_id;</code></pre></div></article><article class="doc-card search-item" data-search="Alterar estrutura alter table add modify drop column"><div class="card-title"><span class="badge">DDL</span><h2>Alterar estrutura</h2></div><div class="cmd-row"><code>ALTER TABLE cliente ADD telefone VARCHAR(20);</code><span>Adiciona coluna.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>ALTER TABLE cliente MODIFY nome VARCHAR(150);</code><span>Altera definição.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>ALTER TABLE cliente DROP COLUMN telefone;</code><span>Remove coluna.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div></article></section>
 </main>
-
 <footer class="site-footer">
-  <div class="shell footer-grid">
-    <div class="footer-profile"><img src="https://avatars.githubusercontent.com/u/104946213?v=4" alt="Foto de Alexsander Daniel no GitHub"><div><strong>Alexsander Daniel</strong><span>Material de consulta para desenvolvimento web</span></div></div>
-    <div class="footer-social"><a href="https://wa.me/5538999306760" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" target="_blank" rel="noopener">GitHub</a></div>
-  </div>
-  <div class="shell footer-bottom"><span>Feito apenas com HTML, CSS e JavaScript.</span><span>Compatível com GitHub Pages.</span></div>
-</footer>
+<div class="shell footer-grid">
+<div class="footer-profile"><img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/><div><strong>Alexsander Daniel</strong><span>Material para consulta</span></div></div>
+<div class="footer-social"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">GitHub</a></div>
+</div>
 
-<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" type="search" placeholder="Ex.: git push, localhost, SELECT, npm install..."><div id="globalResults" class="global-results"></div><small>Pressione Esc para fechar.</small></div></div>
+</footer>
+<div aria-hidden="true" class="search-modal" id="searchModal"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" placeholder="Ex.: git push, localhost, SELECT, npm install..." type="search"/><div class="global-results" id="globalResults"></div><small>Pressione Esc para fechar.</small></div></div>
 <div class="toast" id="toast">Copiado!</div>
-<button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+<button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">↑</button>
 <script src="assets/script.js"></script>
 </body></html>
