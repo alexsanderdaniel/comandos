@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Comandos locais para controlar alterações, organizar branches, criar commits e recuperar versões.">
+<meta name="author" content="Alexsander Daniel">
+<title>Git | Central de Comandos</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="git">
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
+    <nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="active" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+    <div class="header-actions">
+      <button id="globalSearchBtn" class="header-btn" type="button" title="Pesquisar">⌕</button>
+      <button id="themeBtn" class="header-btn" type="button" title="Alternar tema">◐</button>
+      <button id="menuBtn" class="header-btn mobile-only" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="active" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>Git</span></div>
+    <span class="kicker">CONTROLE DE VERSÃO</span>
+    <h1>Git</h1>
+    <p>Comandos locais para controlar alterações, organizar branches, criar commits e recuperar versões.</p>
+    
+  </div>
+</section>
+
+<section class="shell local-tools">
+  <div class="local-search"><span>⌕</span><input id="pageSearch" type="search" placeholder="Pesquisar nesta página..." autocomplete="off"><kbd>/</kbd></div>
+  <div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
+</section>
+
+<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item" data-search="Configuração inicial config user name email global"><div class="card-title"><span class="badge">Configuração</span><h2>Configuração inicial</h2></div><p>Faça uma vez em cada computador. Use preferencialmente o mesmo nome e e-mail da sua conta do GitHub.</p><div class="code-box"><div class="code-top"><span>Comandos</span><button class="copy" type="button">Copiar</button></div><pre><code>git config --global user.name &quot;Seu Nome&quot;
+git config --global user.email &quot;seuemail@exemplo.com&quot;
+git config --global --list</code></pre></div></article><article class="doc-card search-item" data-search="Iniciar um repositório local init status novo repositorio"><div class="card-title"><span class="badge">Começo</span><h2>Iniciar um repositório local</h2></div><div class="code-box"><div class="code-top"><span>Comandos</span><button class="copy" type="button">Copiar</button></div><pre><code>git init
+git status</code></pre></div><div class="callout info"><strong>O que acontece?</strong><p>O comando <code>git init</code> cria a estrutura interna do Git na pasta atual.</p></div></article><article class="doc-card search-item" data-search="Primeiro commit add commit primeiro"><div class="card-title"><span class="badge">Commit</span><h2>Primeiro commit</h2></div><div class="code-box"><div class="code-top"><span>Comandos</span><button class="copy" type="button">Copiar</button></div><pre><code>git add .
+git commit -m &quot;Primeiro commit&quot;</code></pre></div><p><code>git add .</code> prepara as alterações e <code>git commit</code> registra uma versão no histórico local.</p></article><article class="doc-card search-item" data-search="Commits seguintes segundo commit rotina"><div class="card-title"><span class="badge">Dia a dia</span><h2>Commits seguintes</h2></div><div class="cmd-row"><code>git status</code><span>Confere o que foi alterado.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git add .</code><span>Adiciona todas as alterações ao stage.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git commit -m &quot;Descrição&quot;</code><span>Cria um novo commit.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git log --oneline</code><span>Mostra o histórico resumido.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Inspecionar alterações diff staged show log graph"><div class="card-title"><span class="badge">Inspeção</span><h2>Inspecionar alterações</h2></div><div class="cmd-row"><code>git diff</code><span>Compara alterações ainda fora do stage.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git diff --staged</code><span>Mostra alterações já adicionadas ao stage.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git show</code><span>Exibe detalhes do commit atual.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git log --graph --oneline --all</code><span>Exibe histórico em forma de grafo.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Branches branch switch merge"><div class="card-title"><span class="badge">Branches</span><h2>Branches</h2></div><div class="cmd-row"><code>git branch</code><span>Lista branches.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git switch -c recurso</code><span>Cria e entra em uma branch.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git switch main</code><span>Volta para main.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git merge recurso</code><span>Mescla a branch recurso na atual.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git branch -d recurso</code><span>Remove branch local já mesclada.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Stash stash guardar temporario"><div class="card-title"><span class="badge">Organização</span><h2>Stash</h2></div><div class="cmd-row"><code>git stash</code><span>Guarda alterações temporariamente.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git stash list</code><span>Lista os stashes.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git stash pop</code><span>Restaura e remove o stash mais recente.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git stash apply</code><span>Restaura sem remover o stash.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Desfazer com segurança restore revert reset desfazer"><div class="card-title"><span class="badge">Recuperação</span><h2>Desfazer com segurança</h2></div><div class="cmd-row"><code>git restore arquivo.txt</code><span>Descarta alteração local não adicionada.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git restore --staged arquivo.txt</code><span>Retira um arquivo do stage.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git revert HASH</code><span>Cria um commit que desfaz outro commit.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git reset --soft HEAD~1</code><span>Remove o último commit mantendo as alterações.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="callout danger"><strong>Cuidado</strong><p>Evite <code>git reset --hard</code> quando não tiver certeza, pois ele pode descartar alterações locais.</p></div></article><article class="doc-card search-item" data-search="Tags e versões tag versao release"><div class="card-title"><span class="badge">Versões</span><h2>Tags e versões</h2></div><div class="cmd-row"><code>git tag</code><span>Lista tags.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git tag -a v1.0.0 -m &quot;Versão 1.0&quot;</code><span>Cria uma tag anotada.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git push origin v1.0.0</code><span>Publica a tag específica.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>git push origin --tags</code><span>Publica todas as tags.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search=".gitignore gitignore env node_modules vendor"><div class="card-title"><span class="badge">Segurança</span><h2>.gitignore</h2></div><p>Evita que arquivos desnecessários ou sensíveis entrem no versionamento.</p><div class="code-box"><div class="code-top"><span>.gitignore</span><button class="copy" type="button">Copiar</button></div><pre><code>.env
+node_modules/
+vendor/
+*.log
+.DS_Store
+.vscode/</code></pre></div><div class="callout danger"><strong>Segurança</strong><p>Nunca coloque senhas, tokens, chaves privadas ou credenciais reais no repositório.</p></div></article></section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-profile"><img src="https://avatars.githubusercontent.com/u/104946213?v=4" alt="Foto de Alexsander Daniel no GitHub"><div><strong>Alexsander Daniel</strong><span>Material de consulta para desenvolvimento web</span></div></div>
+    <div class="footer-social"><a href="https://wa.me/5538999306760" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <div class="shell footer-bottom"><span>Feito apenas com HTML, CSS e JavaScript.</span><span>Compatível com GitHub Pages.</span></div>
+</footer>
+
+<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" type="search" placeholder="Ex.: git push, localhost, SELECT, npm install..."><div id="globalResults" class="global-results"></div><small>Pressione Esc para fechar.</small></div></div>
+<div class="toast" id="toast">Copiado!</div>
+<button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+<script src="assets/script.js"></script>
+</body></html>

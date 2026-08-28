@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Referência de comandos para dependências e scripts de projetos JavaScript, sem tornar este site dependente de Node.">
+<meta name="author" content="Alexsander Daniel">
+<title>Node / NPM | Central de Comandos</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="node">
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
+    <nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="active" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+    <div class="header-actions">
+      <button id="globalSearchBtn" class="header-btn" type="button" title="Pesquisar">⌕</button>
+      <button id="themeBtn" class="header-btn" type="button" title="Alternar tema">◐</button>
+      <button id="menuBtn" class="header-btn mobile-only" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="active" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>Node/NPM</span></div>
+    <span class="kicker">ECOSSISTEMA JAVASCRIPT</span>
+    <h1>Node / NPM</h1>
+    <p>Referência de comandos para dependências e scripts de projetos JavaScript, sem tornar este site dependente de Node.</p>
+    <div class="hero-note">Todos os recursos desta Central funcionam sem Node/NPM; os comandos abaixo são apenas conteúdo de estudo.</div>
+  </div>
+</section>
+
+<section class="shell local-tools">
+  <div class="local-search"><span>⌕</span><input id="pageSearch" type="search" placeholder="Pesquisar nesta página..." autocomplete="off"><kbd>/</kbd></div>
+  <div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
+</section>
+
+<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item wide" data-search="Importante: Node/NPM e GitHub Pages github pages node npm nao executa"><div class="card-title"><span class="badge">Atenção</span><h2>Importante: Node/NPM e GitHub Pages</h2></div><div class="callout warning"><strong>Conteúdo de referência</strong><p>GitHub Pages não mantém um processo Node.js executando no servidor. NPM pode ser usado durante o desenvolvimento, mas este site não depende dele.</p></div></article><article class="doc-card search-item" data-search="Versões node version npm version"><div class="card-title"><span class="badge">Terminal</span><h2>Versões</h2></div><div class="cmd-row"><code>node -v</code><span>Mostra a versão do Node.js.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm -v</code><span>Mostra a versão do NPM.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Criar package.json npm init package json"><div class="card-title"><span class="badge">Projeto</span><h2>Criar package.json</h2></div><div class="cmd-row"><code>npm init</code><span>Assistente de criação.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm init -y</code><span>Cria usando valores padrão.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Dependências npm install uninstall dependencias dev"><div class="card-title"><span class="badge">Pacotes</span><h2>Dependências</h2></div><div class="cmd-row"><code>npm install</code><span>Instala dependências listadas no package.json.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm install pacote</code><span>Instala um pacote.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm install -D pacote</code><span>Instala como dependência de desenvolvimento.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm uninstall pacote</code><span>Remove um pacote.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Scripts npm run dev build start scripts"><div class="card-title"><span class="badge">Scripts</span><h2>Scripts</h2></div><p>Scripts ficam em <code>package.json</code> e variam conforme o projeto.</p><div class="code-box"><div class="code-top"><span>Terminal</span><button class="copy" type="button">Copiar</button></div><pre><code>npm run
+npm run dev
+npm run build
+npm start</code></pre></div><p><code>npm run</code> é útil para listar os scripts realmente disponíveis.</p></article><article class="doc-card search-item" data-search="Atualização e auditoria npm outdated update audit"><div class="card-title"><span class="badge">Manutenção</span><h2>Atualização e auditoria</h2></div><div class="cmd-row"><code>npm outdated</code><span>Mostra dependências desatualizadas.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm update</code><span>Atualiza dentro dos intervalos permitidos.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm audit</code><span>Verifica vulnerabilidades conhecidas.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>npm audit fix</code><span>Tenta aplicar correções compatíveis.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="O que enviar ao Git node_modules gitignore package lock"><div class="card-title"><span class="badge">Git</span><h2>O que enviar ao Git</h2></div><p>Normalmente, <code>node_modules/</code> não deve ser versionado. Mantenha <code>package.json</code> e, quando aplicável, <code>package-lock.json</code>.</p><div class="code-box"><div class="code-top"><span>.gitignore</span><button class="copy" type="button">Copiar</button></div><pre><code>node_modules/
+.env</code></pre></div></article></section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-profile"><img src="https://avatars.githubusercontent.com/u/104946213?v=4" alt="Foto de Alexsander Daniel no GitHub"><div><strong>Alexsander Daniel</strong><span>Material de consulta para desenvolvimento web</span></div></div>
+    <div class="footer-social"><a href="https://wa.me/5538999306760" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <div class="shell footer-bottom"><span>Feito apenas com HTML, CSS e JavaScript.</span><span>Compatível com GitHub Pages.</span></div>
+</footer>
+
+<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" type="search" placeholder="Ex.: git push, localhost, SELECT, npm install..."><div id="globalResults" class="global-results"></div><small>Pressione Esc para fechar.</small></div></div>
+<div class="toast" id="toast">Copiado!</div>
+<button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+<script src="assets/script.js"></script>
+</body></html>

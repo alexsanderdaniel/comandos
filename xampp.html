@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Comandos para iniciar Apache/MySQL, trabalhar com htdocs, abrir phpMyAdmin e diagnosticar problemas no Linux.">
+<meta name="author" content="Alexsander Daniel">
+<title>XAMPP | Central de Comandos</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="xampp">
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
+    <nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="active" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+    <div class="header-actions">
+      <button id="globalSearchBtn" class="header-btn" type="button" title="Pesquisar">⌕</button>
+      <button id="themeBtn" class="header-btn" type="button" title="Alternar tema">◐</button>
+      <button id="menuBtn" class="header-btn mobile-only" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="active" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="shell">
+    <div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>XAMPP</span></div>
+    <span class="kicker">SERVIDOR LOCAL</span>
+    <h1>XAMPP</h1>
+    <p>Comandos para iniciar Apache/MySQL, trabalhar com htdocs, abrir phpMyAdmin e diagnosticar problemas no Linux.</p>
+    
+  </div>
+</section>
+
+<section class="shell local-tools">
+  <div class="local-search"><span>⌕</span><input id="pageSearch" type="search" placeholder="Pesquisar nesta página..." autocomplete="off"><kbd>/</kbd></div>
+  <div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
+</section>
+
+<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item" data-search="Parar serviços que causam conflito systemctl stop apache mysql mariadb conflito"><div class="card-title"><span class="badge">Preparação</span><h2>Parar serviços que causam conflito</h2></div><div class="code-box"><div class="code-top"><span>Comandos</span><button class="copy" type="button">Copiar</button></div><pre><code>sudo systemctl stop apache2
+sudo systemctl stop mysql
+sudo systemctl stop mariadb</code></pre></div><p>Isso pode liberar as portas que o Apache e o MySQL do XAMPP precisam usar.</p></article><article class="doc-card search-item" data-search="Iniciar, parar e reiniciar lampp start stop restart status"><div class="card-title"><span class="badge">Serviços</span><h2>Iniciar, parar e reiniciar</h2></div><div class="cmd-row"><code>sudo /opt/lampp/lampp start</code><span>Inicia os serviços do XAMPP.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo /opt/lampp/lampp status</code><span>Mostra o status.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo /opt/lampp/lampp stop</code><span>Para os serviços.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo /opt/lampp/lampp restart</code><span>Reinicia o XAMPP.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Diagnosticar portas 80 443 3306 error log httpd syntax"><div class="card-title"><span class="badge">Diagnóstico</span><h2>Diagnosticar portas</h2></div><div class="cmd-row"><code>sudo ss -ltnp | grep -E &#x27;:80|:443|:3306&#x27;</code><span>Mostra processos usando portas do Apache/HTTPS/MySQL.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo /opt/lampp/bin/httpd -t</code><span>Testa a configuração do Apache; o esperado é Syntax OK.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo tail -n 50 /opt/lampp/logs/error_log</code><span>Mostra erros recentes do Apache.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo tail -n 50 /opt/lampp/var/mysql/*.err</code><span>Mostra erros recentes do MySQL.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="htdocs e projetos htdocs projeto copiar permissao"><div class="card-title"><span class="badge">Projetos</span><h2>htdocs e projetos</h2></div><div class="cmd-row"><code>cd /opt/lampp/htdocs</code><span>Entra na pasta pública do Apache.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo mkdir /opt/lampp/htdocs/projeto</code><span>Cria uma pasta de projeto.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo cp -r ~/Downloads/NOME_DO_PROJETO /opt/lampp/htdocs/</code><span>Copia projeto para htdocs.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>sudo chown -R $USER:$USER /opt/lampp/htdocs/projeto</code><span>Permite ao usuário editar o projeto.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item" data-search="Endereços locais localhost phpmyadmin navegador"><div class="card-title"><span class="badge">Navegador</span><h2>Endereços locais</h2></div><div class="cmd-row"><code>http://localhost</code><span>Página inicial local.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>http://localhost/phpmyadmin</code><span>Abre phpMyAdmin.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div><div class="cmd-row"><code>http://localhost/NOME_DO_PROJETO/</code><span>Abre um projeto em htdocs.</span><button class="mini-copy" type="button" aria-label="Copiar comando">⧉</button></div></article><article class="doc-card search-item wide" data-search="Rotina após reiniciar rotina reiniciar computador"><div class="card-title"><span class="badge">Checklist</span><h2>Rotina após reiniciar</h2></div><div class="code-box"><div class="code-top"><span>Sequência rápida</span><button class="copy" type="button">Copiar</button></div><pre><code>sudo systemctl stop apache2
+sudo systemctl stop mysql
+sudo systemctl stop mariadb
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp status</code></pre></div><div class="callout info"><strong>Observação</strong><p>Se um serviço como MariaDB não estiver instalado, o sistema pode informar que a unidade não existe.</p></div></article></section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div class="footer-profile"><img src="https://avatars.githubusercontent.com/u/104946213?v=4" alt="Foto de Alexsander Daniel no GitHub"><div><strong>Alexsander Daniel</strong><span>Material de consulta para desenvolvimento web</span></div></div>
+    <div class="footer-social"><a href="https://wa.me/5538999306760" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <div class="shell footer-bottom"><span>Feito apenas com HTML, CSS e JavaScript.</span><span>Compatível com GitHub Pages.</span></div>
+</footer>
+
+<div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" type="search" placeholder="Ex.: git push, localhost, SELECT, npm install..."><div id="globalResults" class="global-results"></div><small>Pressione Esc para fechar.</small></div></div>
+<div class="toast" id="toast">Copiado!</div>
+<button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+<script src="assets/script.js"></script>
+</body></html>
