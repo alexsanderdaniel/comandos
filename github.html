@@ -1,73 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Repositórios remotos, sincronização, documentação, colaboração e publicação de sites estáticos." name="description"/>
-<meta content="Alexsander Daniel" name="author"/>
-<title>GitHub | Central de Comandos</title>
-<link href="assets/style.css" rel="stylesheet"/>
-</head>
-<body data-page="github">
-<div class="scroll-progress" id="scrollProgress"></div>
-<header class="site-header">
-<div class="shell header-row">
-<a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
-<nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="active" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-<div class="header-actions">
-<button class="header-btn" id="globalSearchBtn" title="Pesquisar" type="button">⌕</button>
-<button class="header-btn" id="themeBtn" title="Alternar tema" type="button">◐</button>
-<button aria-label="Abrir menu" class="header-btn mobile-only" id="menuBtn" type="button">☰</button>
-</div>
-</div>
-<nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="active" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-</header>
-<main>
-<section class="page-hero">
-<div class="shell">
-<div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>GitHub</span></div>
-<span class="kicker">HOSPEDAGEM E COLABORAÇÃO</span>
-<h1>GitHub</h1>
-<p>Repositórios remotos, sincronização, documentação, colaboração e publicação de sites estáticos.</p>
-<div class="hero-note">GitHub Pages executa o front-end do site: HTML, CSS e JavaScript. PHP, MySQL e Node/NPM podem aparecer como conteúdo de estudo, mas não são executados pelo Pages.</div>
-</div>
-</section>
-<section class="shell local-tools">
-<div class="local-search"><span>⌕</span><input autocomplete="off" id="pageSearch" placeholder="Pesquisar nesta página..." type="search"/><kbd>/</kbd></div>
-<div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
-</section>
-<section aria-label="Material complementar para download" class="shell resource-download">
-<div aria-hidden="true" class="resource-download-icon">PDF</div>
-<div class="resource-download-copy">
-<span class="resource-label">MATERIAL PARA DOWNLOAD</span>
-<h2>Git/GitHub - Básico</h2>
-<p>Guia em PDF com configuração inicial, conexão de repositórios, commits, sincronização e GitHub Pages.</p>
-</div>
-<a class="download-btn" download="" href="downloads/Git_Github_Basico_by_Alexsander_Daniel.pdf">Baixar PDF <span aria-hidden="true">↓</span></a>
-</section>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Repositórios remotos, sincronização, documentação, colaboração e publicação de sites estáticos."
+      name="description"
+    />
+    <meta content="Alexsander Daniel" name="author" />
+    <title>GitHub | Central de Comandos</title>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+  <body data-page="github">
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="index.html"
+          ><span class="brand-code">&lt;/&gt;</span
+          ><span><b>Central</b><small>de Comandos</small></span></a
+        >
+        <nav class="desktop-nav">
+          <a class="" href="index.html">Início</a
+          ><a class="" href="git.html">Git</a
+          ><a class="active" href="github.html">GitHub</a
+          ><a class="" href="linux.html">Linux</a
+          ><a class="" href="xampp.html">XAMPP</a
+          ><a class="" href="frontend.html">HTML/CSS/JS</a
+          ><a class="" href="php.html">PHP</a
+          ><a class="" href="mysql.html">MySQL</a
+          ><a class="" href="node.html">Node/NPM</a
+          ><a class="" href="fluxos.html">Fluxos</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="header-btn"
+            id="globalSearchBtn"
+            title="Pesquisar"
+            type="button"
+          >
+            ⌕
+          </button>
+          <button
+            class="header-btn"
+            id="themeBtn"
+            title="Alternar tema"
+            type="button"
+          >
+            ◐
+          </button>
+          <button
+            aria-label="Abrir menu"
+            class="header-btn mobile-only"
+            id="menuBtn"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav">
+        <a class="" href="index.html">Início</a
+        ><a class="" href="git.html">Git</a
+        ><a class="active" href="github.html">GitHub</a
+        ><a class="" href="linux.html">Linux</a
+        ><a class="" href="xampp.html">XAMPP</a
+        ><a class="" href="frontend.html">HTML/CSS/JS</a
+        ><a class="" href="php.html">PHP</a
+        ><a class="" href="mysql.html">MySQL</a
+        ><a class="" href="node.html">Node/NPM</a
+        ><a class="" href="fluxos.html">Fluxos</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div class="breadcrumbs">
+            <a href="index.html">Início</a><span>/</span><span>GitHub</span>
+          </div>
+          <span class="kicker">HOSPEDAGEM E COLABORAÇÃO</span>
+          <h1>GitHub</h1>
+          <p>
+            Repositórios remotos, sincronização, documentação, colaboração e
+            publicação de sites estáticos.
+          </p>
+          <div class="hero-note">
+            GitHub Pages executa o front-end do site: HTML, CSS e JavaScript.
+            PHP, MySQL e Node/NPM podem aparecer como conteúdo de estudo, mas
+            não são executados pelo Pages.
+          </div>
+        </div>
+      </section>
+      <section class="shell local-tools">
+        <div class="local-search">
+          <span>⌕</span
+          ><input
+            autocomplete="off"
+            id="pageSearch"
+            placeholder="Pesquisar nesta página..."
+            type="search"
+          /><kbd>/</kbd>
+        </div>
+        <div class="result-count">
+          <b id="resultCount">0</b> tópicos visíveis
+        </div>
+      </section>
+      <section
+        aria-label="Material complementar para download"
+        class="shell resource-download"
+      >
+        <div aria-hidden="true" class="resource-download-icon">PDF</div>
+        <div class="resource-download-copy">
+          <span class="resource-label">MATERIAL PARA DOWNLOAD</span>
+          <h2>Git/GitHub - Básico</h2>
+          <p>
+            Guia em PDF com configuração inicial, conexão de repositórios,
+            commits, sincronização e GitHub Pages.
+          </p>
+        </div>
+        <a
+          class="download-btn"
+          download=""
+          href="downloads/Git_Github_Basico_by_Alexsander_Daniel.pdf"
+          >Baixar PDF <span aria-hidden="true">↓</span></a
+        >
+      </section>
 
-<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item" data-search="Conectar um projeto ao GitHub remote origin push primeiro envio"><div class="card-title"><span class="badge">Remoto</span><h2>Conectar um projeto ao GitHub</h2></div><p>Depois de criar um repositório vazio no GitHub:</p><div class="code-box"><div class="code-top"><span>Comandos</span><button class="copy" type="button">Copiar</button></div><pre><code>git branch -M main
+      <section class="shell doc-grid" id="contentGrid">
+        <article
+          class="doc-card search-item"
+          data-search="Conectar um projeto ao GitHub remote origin push primeiro envio"
+        >
+          <div class="card-title">
+            <span class="badge">Remoto</span>
+            <h2>Conectar um projeto ao GitHub</h2>
+          </div>
+          <p>Depois de criar um repositório vazio no GitHub:</p>
+          <div class="code-box">
+            <div class="code-top">
+              <span>Comandos</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>git branch -M main
 git remote add origin https://github.com/USUARIO/REPOSITORIO.git
-git push -u origin main</code></pre></div></article><article class="doc-card search-item" data-search="Atualizar o GitHub push atualizar segundo commit"><div class="card-title"><span class="badge">Rotina</span><h2>Atualizar o GitHub</h2></div><div class="code-box"><div class="code-top"><span>Comandos</span><button class="copy" type="button">Copiar</button></div><pre><code>git status
+git push -u origin main</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Atualizar o GitHub push atualizar segundo commit"
+        >
+          <div class="card-title">
+            <span class="badge">Rotina</span>
+            <h2>Atualizar o GitHub</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>Comandos</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>git status
 git add .
 git commit -m "Descrição da alteração"
-git push</code></pre></div><p>Esse é o fluxo mais usado após o primeiro envio.</p></article><article class="doc-card search-item" data-search="Clonar e sincronizar clone pull fetch rebase"><div class="card-title"><span class="badge">Sincronização</span><h2>Clonar e sincronizar</h2></div><div class="cmd-row"><code>git clone URL_DO_REPOSITORIO</code><span>Baixa uma cópia completa do repositório.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>git pull</code><span>Baixa e integra alterações remotas.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>git fetch</code><span>Atualiza referências remotas sem mesclar.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>git pull --rebase</code><span>Atualiza reposicionando seus commits locais.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div></article><article class="doc-card search-item" data-search="Gerenciar origin remote set-url already exists"><div class="card-title"><span class="badge">Remoto</span><h2>Gerenciar origin</h2></div><div class="cmd-row"><code>git remote -v</code><span>Exibe URLs remotas.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>git remote set-url origin NOVA_URL</code><span>Troca a URL do origin.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>git remote remove origin</code><span>Remove o origin atual.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="callout warning"><strong>Erro comum</strong><p>Se aparecer <code>remote origin already exists</code>, altere a URL com <code>git remote set-url origin ...</code>.</p></div></article><article class="doc-card search-item wide" data-search="GitHub Pages pages deploy main root publicar site"><div class="card-title"><span class="badge">GitHub Pages</span><h2>GitHub Pages</h2></div><p>Publica sites estáticos diretamente a partir do repositório.</p><ol class="step-list"><li><span>1</span><div>Abra <strong>Settings</strong> no repositório.</div></li><li><span>2</span><div>Entre em <strong>Pages</strong>.</div></li><li><span>3</span><div>Em Source, escolha <strong>Deploy from a branch</strong>.</div></li><li><span>4</span><div>Selecione <strong>main</strong> e <strong>/(root)</strong>.</div></li><li><span>5</span><div>Clique em <strong>Save</strong> e aguarde a publicação.</div></li></ol><div class="url-line"><code>https://USUARIO.github.io/REPOSITORIO/</code></div></article><article class="doc-card search-item" data-search="Issues issues bug tarefa melhoria"><div class="card-title"><span class="badge">Colaboração</span><h2>Issues</h2></div><p>Use Issues para registrar bugs, tarefas, melhorias e dúvidas. Um bom título descreve o problema e a descrição deve explicar contexto, passos e resultado esperado.</p></article><article class="doc-card search-item" data-search="Pull Requests pull request pr branch merge"><div class="card-title"><span class="badge">Colaboração</span><h2>Pull Requests</h2></div><p>Pull Requests permitem revisar alterações de uma branch antes de integrá-las à principal. Fluxo típico:</p><ol class="step-list"><li><span>1</span><div>Crie uma branch.</div></li><li><span>2</span><div>Faça alterações e commits.</div></li><li><span>3</span><div>Envie a branch com <code>git push -u origin branch</code>.</div></li><li><span>4</span><div>Abra um Pull Request no GitHub.</div></li><li><span>5</span><div>Revise e faça o merge.</div></li></ol></article><article class="doc-card search-item" data-search="README.md readme markdown documentação"><div class="card-title"><span class="badge">Documentação</span><h2>README.md</h2></div><p>É a apresentação do projeto. Inclua objetivo, tecnologias, instruções de execução, estrutura, imagens quando úteis e informações de autoria.</p><div class="code-box"><div class="code-top"><span>Exemplo README</span><button class="copy" type="button">Copiar</button></div><pre><code># Nome do projeto
+git push</code></pre>
+          </div>
+          <p>Esse é o fluxo mais usado após o primeiro envio.</p>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Clonar e sincronizar clone pull fetch rebase"
+        >
+          <div class="card-title">
+            <span class="badge">Sincronização</span>
+            <h2>Clonar e sincronizar</h2>
+          </div>
+          <div class="cmd-row">
+            <code>git clone URL_DO_REPOSITORIO</code
+            ><span>Baixa uma cópia completa do repositório.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>git pull</code><span>Baixa e integra alterações remotas.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>git fetch</code
+            ><span>Atualiza referências remotas sem mesclar.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>git pull --rebase</code
+            ><span>Atualiza reposicionando seus commits locais.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Gerenciar origin remote set-url already exists"
+        >
+          <div class="card-title">
+            <span class="badge">Remoto</span>
+            <h2>Gerenciar origin</h2>
+          </div>
+          <div class="cmd-row">
+            <code>git remote -v</code><span>Exibe URLs remotas.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>git remote set-url origin NOVA_URL</code
+            ><span>Troca a URL do origin.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>git remote remove origin</code
+            ><span>Remove o origin atual.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="callout warning">
+            <strong>Erro comum</strong>
+            <p>
+              Se aparecer <code>remote origin already exists</code>, altere a
+              URL com <code>git remote set-url origin ...</code>.
+            </p>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item wide"
+          data-search="GitHub Pages pages deploy main root publicar site"
+        >
+          <div class="card-title">
+            <span class="badge">GitHub Pages</span>
+            <h2>GitHub Pages</h2>
+          </div>
+          <p>Publica sites estáticos diretamente a partir do repositório.</p>
+          <ol class="step-list">
+            <li>
+              <span>1</span>
+              <div>Abra <strong>Settings</strong> no repositório.</div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>Entre em <strong>Pages</strong>.</div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                Em Source, escolha <strong>Deploy from a branch</strong>.
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                Selecione <strong>main</strong> e <strong>/(root)</strong>.
+              </div>
+            </li>
+            <li>
+              <span>5</span>
+              <div>Clique em <strong>Save</strong> e aguarde a publicação.</div>
+            </li>
+          </ol>
+          <div class="url-line">
+            <code>https://USUARIO.github.io/REPOSITORIO/</code>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Issues issues bug tarefa melhoria"
+        >
+          <div class="card-title">
+            <span class="badge">Colaboração</span>
+            <h2>Issues</h2>
+          </div>
+          <p>
+            Use Issues para registrar bugs, tarefas, melhorias e dúvidas. Um bom
+            título descreve o problema e a descrição deve explicar contexto,
+            passos e resultado esperado.
+          </p>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Pull Requests pull request pr branch merge"
+        >
+          <div class="card-title">
+            <span class="badge">Colaboração</span>
+            <h2>Pull Requests</h2>
+          </div>
+          <p>
+            Pull Requests permitem revisar alterações de uma branch antes de
+            integrá-las à principal. Fluxo típico:
+          </p>
+          <ol class="step-list">
+            <li>
+              <span>1</span>
+              <div>Crie uma branch.</div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>Faça alterações e commits.</div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                Envie a branch com <code>git push -u origin branch</code>.
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>Abra um Pull Request no GitHub.</div>
+            </li>
+            <li>
+              <span>5</span>
+              <div>Revise e faça o merge.</div>
+            </li>
+          </ol>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="README.md readme markdown documentação"
+        >
+          <div class="card-title">
+            <span class="badge">Documentação</span>
+            <h2>README.md</h2>
+          </div>
+          <p>
+            É a apresentação do projeto. Inclua objetivo, tecnologias,
+            instruções de execução, estrutura, imagens quando úteis e
+            informações de autoria.
+          </p>
+          <div class="code-box">
+            <div class="code-top">
+              <span>Exemplo README</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code># Nome do projeto
 
 Descrição breve.
 
 ## Como executar
 1. Clone o repositório
-2. Abra index.html</code></pre></div></article><article class="doc-card search-item" data-search="Repositório público x privado publico privado visibilidade"><div class="card-title"><span class="badge">Segurança</span><h2>Repositório público x privado</h2></div><p><strong>Público:</strong> qualquer pessoa pode visualizar o código. <strong>Privado:</strong> apenas pessoas autorizadas têm acesso. Mesmo em repositório privado, evite versionar credenciais.</p></article><article class="doc-card search-item" data-search="Link do seu projeto no Pages alexsanderdaniel github pages url"><div class="card-title"><span class="badge">Publicação</span><h2>Link do seu projeto no Pages</h2></div><p>Depois que o Pages estiver ativo, o padrão normalmente é:</p><div class="url-line"><code>https://alexsanderdaniel.github.io/NOME-DO-REPOSITORIO/</code></div></article></section>
-</main>
-<footer class="site-footer">
-<div class="shell footer-grid">
-<div class="footer-profile"><img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/><div><strong>Alexsander Daniel</strong><span>Material para consulta</span></div></div>
-<div class="footer-social"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">GitHub</a></div>
-</div>
-</footer>
-<div aria-hidden="true" class="search-modal" id="searchModal"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" placeholder="Ex.: git push, localhost, SELECT, npm install..." type="search"/><div class="global-results" id="globalResults"></div><small>Pressione Esc para fechar.</small></div></div>
-<div class="toast" id="toast">Copiado!</div>
-<button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">↑</button>
-<script src="assets/script.js"></script>
-</body></html>
+2. Abra index.html</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Repositório público x privado publico privado visibilidade"
+        >
+          <div class="card-title">
+            <span class="badge">Segurança</span>
+            <h2>Repositório público x privado</h2>
+          </div>
+          <p>
+            <strong>Público:</strong> qualquer pessoa pode visualizar o código.
+            <strong>Privado:</strong> apenas pessoas autorizadas têm acesso.
+            Mesmo em repositório privado, evite versionar credenciais.
+          </p>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Link do seu projeto no Pages alexsanderdaniel github pages url"
+        >
+          <div class="card-title">
+            <span class="badge">Publicação</span>
+            <h2>Link do seu projeto no Pages</h2>
+          </div>
+          <p>Depois que o Pages estiver ativo, o padrão normalmente é:</p>
+          <div class="url-line">
+            <code>https://alexsanderdaniel.github.io/NOME-DO-REPOSITORIO/</code>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-profile">
+          <img
+            alt="Foto de Alexsander Daniel no GitHub"
+            src="https://avatars.githubusercontent.com/u/104946213?v=4"
+          />
+          <div>
+            <strong>Alexsander Daniel</strong
+            ><span>Material para consulta</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/5538999306760" rel="noopener" target="_blank"
+            >WhatsApp</a
+          ><a
+            href="https://www.instagram.com/_alexsander_daniel_/"
+            rel="noopener"
+            target="_blank"
+            >Instagram</a
+          ><a
+            href="https://github.com/alexsanderdaniel?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div aria-hidden="true" class="search-modal" id="searchModal">
+      <div class="search-dialog">
+        <div class="dialog-top">
+          <strong>Pesquisar na Central</strong
+          ><button id="closeSearch" type="button">×</button>
+        </div>
+        <input
+          id="globalSearch"
+          placeholder="Ex.: git push, localhost, SELECT, npm install..."
+          type="search"
+        />
+        <div class="global-results" id="globalResults"></div>
+        <small>Pressione Esc para fechar.</small>
+      </div>
+    </div>
+    <div class="toast" id="toast">Copiado!</div>
+    <button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">
+      ↑
+    </button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

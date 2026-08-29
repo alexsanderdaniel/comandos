@@ -1,43 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Fundamentos para construir páginas estáticas que podem ser executadas diretamente no navegador e publicadas no GitHub Pages." name="description"/>
-<meta content="Alexsander Daniel" name="author"/>
-<title>HTML / CSS / JavaScript | Central de Comandos</title>
-<link href="assets/style.css" rel="stylesheet"/>
-</head>
-<body data-page="frontend">
-<div class="scroll-progress" id="scrollProgress"></div>
-<header class="site-header">
-<div class="shell header-row">
-<a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
-<nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="active" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-<div class="header-actions">
-<button class="header-btn" id="globalSearchBtn" title="Pesquisar" type="button">⌕</button>
-<button class="header-btn" id="themeBtn" title="Alternar tema" type="button">◐</button>
-<button aria-label="Abrir menu" class="header-btn mobile-only" id="menuBtn" type="button">☰</button>
-</div>
-</div>
-<nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="active" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-</header>
-<main>
-<section class="page-hero">
-<div class="shell">
-<div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>HTML/CSS/JavaScript</span></div>
-<span class="kicker">FRONT-END</span>
-<h1>HTML / CSS / JavaScript</h1>
-<p>Fundamentos para construir páginas estáticas que podem ser executadas diretamente no navegador e publicadas no GitHub Pages.</p>
-<div class="hero-note">Esta é a tecnologia usada pelo próprio site: nenhuma dependência de servidor.</div>
-</div>
-</section>
-<section class="shell local-tools">
-<div class="local-search"><span>⌕</span><input autocomplete="off" id="pageSearch" placeholder="Pesquisar nesta página..." type="search"/><kbd>/</kbd></div>
-<div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
-</section>
-<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item" data-search="Estrutura HTML mínima doctype head body script link meta"><div class="card-title"><span class="badge">HTML</span><h2>Estrutura HTML mínima</h2></div><div class="code-box"><div class="code-top"><span>HTML</span><button class="copy" type="button">Copiar</button></div><pre><code>&lt;!DOCTYPE html&gt;
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Fundamentos para construir páginas estáticas que podem ser executadas diretamente no navegador e publicadas no GitHub Pages."
+      name="description"
+    />
+    <meta content="Alexsander Daniel" name="author" />
+    <title>HTML / CSS / JavaScript | Central de Comandos</title>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+  <body data-page="frontend">
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="index.html"
+          ><span class="brand-code">&lt;/&gt;</span
+          ><span><b>Central</b><small>de Comandos</small></span></a
+        >
+        <nav class="desktop-nav">
+          <a class="" href="index.html">Início</a
+          ><a class="" href="git.html">Git</a
+          ><a class="" href="github.html">GitHub</a
+          ><a class="" href="linux.html">Linux</a
+          ><a class="" href="xampp.html">XAMPP</a
+          ><a class="active" href="frontend.html">HTML/CSS/JS</a
+          ><a class="" href="php.html">PHP</a
+          ><a class="" href="mysql.html">MySQL</a
+          ><a class="" href="node.html">Node/NPM</a
+          ><a class="" href="fluxos.html">Fluxos</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="header-btn"
+            id="globalSearchBtn"
+            title="Pesquisar"
+            type="button"
+          >
+            ⌕
+          </button>
+          <button
+            class="header-btn"
+            id="themeBtn"
+            title="Alternar tema"
+            type="button"
+          >
+            ◐
+          </button>
+          <button
+            aria-label="Abrir menu"
+            class="header-btn mobile-only"
+            id="menuBtn"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav">
+        <a class="" href="index.html">Início</a
+        ><a class="" href="git.html">Git</a
+        ><a class="" href="github.html">GitHub</a
+        ><a class="" href="linux.html">Linux</a
+        ><a class="" href="xampp.html">XAMPP</a
+        ><a class="active" href="frontend.html">HTML/CSS/JS</a
+        ><a class="" href="php.html">PHP</a
+        ><a class="" href="mysql.html">MySQL</a
+        ><a class="" href="node.html">Node/NPM</a
+        ><a class="" href="fluxos.html">Fluxos</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div class="breadcrumbs">
+            <a href="index.html">Início</a><span>/</span
+            ><span>HTML/CSS/JavaScript</span>
+          </div>
+          <span class="kicker">FRONT-END</span>
+          <h1>HTML / CSS / JavaScript</h1>
+          <p>
+            Fundamentos para construir páginas estáticas que podem ser
+            executadas diretamente no navegador e publicadas no GitHub Pages.
+          </p>
+          <div class="hero-note">
+            Esta é a tecnologia usada pelo próprio site: nenhuma dependência de
+            servidor.
+          </div>
+        </div>
+      </section>
+      <section class="shell local-tools">
+        <div class="local-search">
+          <span>⌕</span
+          ><input
+            autocomplete="off"
+            id="pageSearch"
+            placeholder="Pesquisar nesta página..."
+            type="search"
+          /><kbd>/</kbd>
+        </div>
+        <div class="result-count">
+          <b id="resultCount">0</b> tópicos visíveis
+        </div>
+      </section>
+      <section class="shell doc-grid" id="contentGrid">
+        <article
+          class="doc-card search-item"
+          data-search="Estrutura HTML mínima doctype head body script link meta"
+        >
+          <div class="card-title">
+            <span class="badge">HTML</span>
+            <h2>Estrutura HTML mínima</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>HTML</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="pt-BR"&gt;
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
@@ -49,7 +131,102 @@
   &lt;h1&gt;Olá!&lt;/h1&gt;
   &lt;script src="script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;</code></pre></div></article><article class="doc-card search-item" data-search="Tags HTML comuns tags html h1 p a img form input button"><div class="card-title"><span class="badge">HTML</span><h2>Tags HTML comuns</h2></div><div class="cmd-row"><code>&lt;h1&gt;...&lt;/h1&gt;</code><span>Título principal.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>&lt;p&gt;...&lt;/p&gt;</code><span>Parágrafo.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>&lt;a href="..."&gt;...&lt;/a&gt;</code><span>Link.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>&lt;img src="..." alt="..."&gt;</code><span>Imagem.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>&lt;form&gt;...&lt;/form&gt;</code><span>Formulário.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>&lt;input type="text"&gt;</code><span>Campo de entrada.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>&lt;button type="button"&gt;...&lt;/button&gt;</code><span>Botão.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div></article><article class="doc-card search-item" data-search="CSS essencial css seletor flex gap margin padding border"><div class="card-title"><span class="badge">CSS</span><h2>CSS essencial</h2></div><div class="code-box"><div class="code-top"><span>CSS</span><button class="copy" type="button">Copiar</button></div><pre><code>body {
+&lt;/html&gt;</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Tags HTML comuns tags html h1 p a img form input button"
+        >
+          <div class="card-title">
+            <span class="badge">HTML</span>
+            <h2>Tags HTML comuns</h2>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;h1&gt;...&lt;/h1&gt;</code><span>Título principal.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;p&gt;...&lt;/p&gt;</code><span>Parágrafo.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;a href="..."&gt;...&lt;/a&gt;</code><span>Link.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;img src="..." alt="..."&gt;</code><span>Imagem.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;form&gt;...&lt;/form&gt;</code><span>Formulário.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;input type="text"&gt;</code><span>Campo de entrada.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>&lt;button type="button"&gt;...&lt;/button&gt;</code
+            ><span>Botão.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="CSS essencial css seletor flex gap margin padding border"
+        >
+          <div class="card-title">
+            <span class="badge">CSS</span>
+            <h2>CSS essencial</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>CSS</span><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -65,27 +242,206 @@
   gap: 16px;
   border: 1px solid #ddd;
   border-radius: 12px;
-}</code></pre></div></article><article class="doc-card search-item" data-search="Layout responsivo media query responsivo mobile grid"><div class="card-title"><span class="badge">CSS</span><h2>Layout responsivo</h2></div><div class="code-box"><div class="code-top"><span>CSS</span><button class="copy" type="button">Copiar</button></div><pre><code>@media (max-width: 768px) {
+}</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Layout responsivo media query responsivo mobile grid"
+        >
+          <div class="card-title">
+            <span class="badge">CSS</span>
+            <h2>Layout responsivo</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>CSS</span><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>@media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
   }
-}</code></pre></div><p>Media queries permitem adaptar o layout para telas menores.</p></article><article class="doc-card search-item" data-search="JavaScript: selecionar elementos javascript dom queryselector getelementbyid"><div class="card-title"><span class="badge">JavaScript</span><h2>JavaScript: selecionar elementos</h2></div><div class="cmd-row"><code>document.getElementById('id')</code><span>Seleciona pelo id.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>document.querySelector('.classe')</code><span>Seleciona o primeiro que corresponde.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>document.querySelectorAll('.item')</code><span>Seleciona todos os correspondentes.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div></article><article class="doc-card search-item" data-search="JavaScript: eventos event addEventListener click"><div class="card-title"><span class="badge">JavaScript</span><h2>JavaScript: eventos</h2></div><div class="code-box"><div class="code-top"><span>JavaScript</span><button class="copy" type="button">Copiar</button></div><pre><code>const botao = document.querySelector('#botao');
+}</code></pre>
+          </div>
+          <p>Media queries permitem adaptar o layout para telas menores.</p>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="JavaScript: selecionar elementos javascript dom queryselector getelementbyid"
+        >
+          <div class="card-title">
+            <span class="badge">JavaScript</span>
+            <h2>JavaScript: selecionar elementos</h2>
+          </div>
+          <div class="cmd-row">
+            <code>document.getElementById('id')</code
+            ><span>Seleciona pelo id.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>document.querySelector('.classe')</code
+            ><span>Seleciona o primeiro que corresponde.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>document.querySelectorAll('.item')</code
+            ><span>Seleciona todos os correspondentes.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="JavaScript: eventos event addEventListener click"
+        >
+          <div class="card-title">
+            <span class="badge">JavaScript</span>
+            <h2>JavaScript: eventos</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>JavaScript</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>const botao = document.querySelector('#botao');
 
 botao.addEventListener('click', () =&gt; {
   alert('Clicou!');
-});</code></pre></div><p>Prefira <code>addEventListener</code> para associar comportamentos aos elementos.</p></article><article class="doc-card search-item" data-search="Armazenamento no navegador localstorage navegador dados"><div class="card-title"><span class="badge">JavaScript</span><h2>Armazenamento no navegador</h2></div><div class="code-box"><div class="code-top"><span>JavaScript</span><button class="copy" type="button">Copiar</button></div><pre><code>localStorage.setItem('nome', 'Alexsander');
+});</code></pre>
+          </div>
+          <p>
+            Prefira <code>addEventListener</code> para associar comportamentos
+            aos elementos.
+          </p>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Armazenamento no navegador localstorage navegador dados"
+        >
+          <div class="card-title">
+            <span class="badge">JavaScript</span>
+            <h2>Armazenamento no navegador</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>JavaScript</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>localStorage.setItem('nome', 'Alexsander');
 const nome = localStorage.getItem('nome');
-localStorage.removeItem('nome');</code></pre></div><p><code>localStorage</code> guarda dados no navegador. Esses dados não são um banco centralizado.</p></article><article class="doc-card search-item" data-search="Executar um site estático python http server localhost frontend"><div class="card-title"><span class="badge">Execução</span><h2>Executar um site estático</h2></div><p>Você pode abrir <code>index.html</code> diretamente no navegador. Se quiser servir a pasta por HTTP:</p><div class="code-box"><div class="code-top"><span>Terminal</span><button class="copy" type="button">Copiar</button></div><pre><code>python3 -m http.server 5500</code></pre></div><div class="url-line"><code>http://localhost:5500</code></div></article><article class="doc-card search-item" data-search="Compatibilidade com GitHub Pages github pages html css js estatico"><div class="card-title"><span class="badge">Publicação</span><h2>Compatibilidade com GitHub Pages</h2></div><div class="callout success"><strong>100% compatível</strong><p>Arquivos <code>.html</code>, <code>.css</code>, <code>.js</code> e imagens podem ser publicados no GitHub Pages. O navegador executa o JavaScript.</p></div><p>Este próprio projeto foi construído seguindo esse modelo.</p></article></section>
-</main>
-<footer class="site-footer">
-<div class="shell footer-grid">
-<div class="footer-profile"><img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/><div><strong>Alexsander Daniel</strong><span>Material para consulta</span></div></div>
-<div class="footer-social"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">GitHub</a></div>
-</div>
-
-</footer>
-<div aria-hidden="true" class="search-modal" id="searchModal"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" placeholder="Ex.: git push, localhost, SELECT, npm install..." type="search"/><div class="global-results" id="globalResults"></div><small>Pressione Esc para fechar.</small></div></div>
-<div class="toast" id="toast">Copiado!</div>
-<button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">↑</button>
-<script src="assets/script.js"></script>
-</body></html>
+localStorage.removeItem('nome');</code></pre>
+          </div>
+          <p>
+            <code>localStorage</code> guarda dados no navegador. Esses dados não
+            são um banco centralizado.
+          </p>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Executar um site estático python http server localhost frontend"
+        >
+          <div class="card-title">
+            <span class="badge">Execução</span>
+            <h2>Executar um site estático</h2>
+          </div>
+          <p>
+            Você pode abrir <code>index.html</code> diretamente no navegador. Se
+            quiser servir a pasta por HTTP:
+          </p>
+          <div class="code-box">
+            <div class="code-top">
+              <span>Terminal</span
+              ><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>python3 -m http.server 5500</code></pre>
+          </div>
+          <div class="url-line"><code>http://localhost:5500</code></div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Compatibilidade com GitHub Pages github pages html css js estatico"
+        >
+          <div class="card-title">
+            <span class="badge">Publicação</span>
+            <h2>Compatibilidade com GitHub Pages</h2>
+          </div>
+          <div class="callout success">
+            <strong>100% compatível</strong>
+            <p>
+              Arquivos <code>.html</code>, <code>.css</code>, <code>.js</code> e
+              imagens podem ser publicados no GitHub Pages. O navegador executa
+              o JavaScript.
+            </p>
+          </div>
+          <p>Este próprio projeto foi construído seguindo esse modelo.</p>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-profile">
+          <img
+            alt="Foto de Alexsander Daniel no GitHub"
+            src="https://avatars.githubusercontent.com/u/104946213?v=4"
+          />
+          <div>
+            <strong>Alexsander Daniel</strong
+            ><span>Material para consulta</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/5538999306760" rel="noopener" target="_blank"
+            >WhatsApp</a
+          ><a
+            href="https://www.instagram.com/_alexsander_daniel_/"
+            rel="noopener"
+            target="_blank"
+            >Instagram</a
+          ><a
+            href="https://github.com/alexsanderdaniel?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div aria-hidden="true" class="search-modal" id="searchModal">
+      <div class="search-dialog">
+        <div class="dialog-top">
+          <strong>Pesquisar na Central</strong
+          ><button id="closeSearch" type="button">×</button>
+        </div>
+        <input
+          id="globalSearch"
+          placeholder="Ex.: git push, localhost, SELECT, npm install..."
+          type="search"
+        />
+        <div class="global-results" id="globalResults"></div>
+        <small>Pressione Esc para fechar.</small>
+      </div>
+    </div>
+    <div class="toast" id="toast">Copiado!</div>
+    <button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">
+      ↑
+    </button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

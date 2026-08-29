@@ -1,57 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Uma central organizada em páginas independentes para consultar comandos, exemplos e fluxos de desenvolvimento." name="description"/>
-<meta content="Alexsander Daniel" name="author"/>
-<title>Central de Comandos | Central de Comandos</title>
-<link href="assets/style.css" rel="stylesheet"/>
-</head>
-<body data-page="home">
-<div class="scroll-progress" id="scrollProgress"></div>
-<header class="site-header">
-<div class="shell header-row">
-<a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
-<nav class="desktop-nav"><a class="active" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-<div class="header-actions">
-<button class="header-btn" id="globalSearchBtn" title="Pesquisar" type="button">⌕</button>
-<button class="header-btn" id="themeBtn" title="Alternar tema" type="button">◐</button>
-<button aria-label="Abrir menu" class="header-btn mobile-only" id="menuBtn" type="button">☰</button>
-</div>
-</div>
-<nav class="mobile-nav" id="mobileNav"><a class="active" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-</header>
-<main>
-<section class="page-hero">
-<div class="shell">
-<span class="kicker">REFERÊNCIA RÁPIDA</span>
-<h1>Central de Comandos</h1>
-<p>Uma central organizada para consultar comandos, exemplos e fluxos de desenvolvimento.</p>
-<div class="hero-note">Este site é 100% estático: HTML, CSS e JavaScript puro.</div>
-</div>
-</section>
-<section class="shell local-tools">
-<div class="local-search"><span>⌕</span><input autocomplete="off" id="pageSearch" placeholder="Pesquisar nesta página..." type="search"/><kbd>/</kbd></div>
-<div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
-</section>
-<section class="shell doc-grid" id="contentGrid"><a class="topic-card search-item" data-search="Git Versionamento local, commits, branches, merge, stash e recuperação." href="git.html"><span class="topic-icon">GI</span><div><h2>Git</h2><p>Versionamento local, commits, branches, merge, stash e recuperação.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="GitHub Repositórios remotos, Pages, Issues, Pull Requests e publicação." href="github.html"><span class="topic-icon">GI</span><div><h2>GitHub</h2><p>Repositórios remotos, Pages, Issues, Pull Requests e publicação.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="Terminal Linux Navegação, arquivos, permissões, processos, rede e administração." href="linux.html"><span class="topic-icon">TE</span><div><h2>Terminal Linux</h2><p>Navegação, arquivos, permissões, processos, rede e administração.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="XAMPP Apache, MySQL, htdocs, phpMyAdmin e diagnóstico no Linux." href="xampp.html"><span class="topic-icon">XA</span><div><h2>XAMPP</h2><p>Apache, MySQL, htdocs, phpMyAdmin e diagnóstico no Linux.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="HTML / CSS / JavaScript Estrutura, estilos, DOM, eventos e execução direta no navegador." href="frontend.html"><span class="topic-icon">HT</span><div><h2>HTML / CSS / JavaScript</h2><p>Estrutura, estilos, DOM, eventos e execução direta no navegador.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="PHP Sintaxe, formulários, sessões e execução local como conteúdo de referência." href="php.html"><span class="topic-icon">PH</span><div><h2>PHP</h2><p>Sintaxe, formulários, sessões e execução local como conteúdo de referência.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="MySQL DDL, DML, consultas, relacionamentos e comandos do terminal." href="mysql.html"><span class="topic-icon">MY</span><div><h2>MySQL</h2><p>DDL, DML, consultas, relacionamentos e comandos do terminal.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="Node / NPM Pacotes, scripts e dependências como conteúdo de referência." href="node.html"><span class="topic-icon">NO</span><div><h2>Node / NPM</h2><p>Pacotes, scripts e dependências como conteúdo de referência.</p></div><span class="arrow">→</span></a><a class="topic-card search-item" data-search="Fluxos do dia a dia Checklists completos para tarefas comuns de programação." href="fluxos.html"><span class="topic-icon">FL</span><div><h2>Fluxos do dia a dia</h2><p>Checklists completos para tarefas comuns de programação.</p></div><span class="arrow">→</span></a>
-<article class="profile-panel wide search-item" data-search="Alexsander Daniel whatsapp instagram github contato">
-<img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/>
-<div><span class="kicker">AUTOR</span><h2>Alexsander Daniel</h2><p>Links rápidos para contato e projetos.</p>
-<div class="social-buttons"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">Repositórios no GitHub</a></div></div>
-</article></section>
-</main>
-<footer class="site-footer">
-<div class="shell footer-grid">
-<div class="footer-profile"><img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/><div><strong>Alexsander Daniel</strong><span>Material para consulta</span></div></div>
-<div class="footer-social"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">GitHub</a></div>
-</div>
-
-</footer>
-<div aria-hidden="true" class="search-modal" id="searchModal"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" placeholder="Ex.: git push, localhost, SELECT, npm install..." type="search"/><div class="global-results" id="globalResults"></div><small>Pressione Esc para fechar.</small></div></div>
-<div class="toast" id="toast">Copiado!</div>
-<button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">↑</button>
-<script src="assets/script.js"></script>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Uma central organizada em páginas independentes para consultar comandos, exemplos e fluxos de desenvolvimento."
+      name="description"
+    />
+    <meta content="Alexsander Daniel" name="author" />
+    <title>Central de Comandos | Central de Comandos</title>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+  <body data-page="home">
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="index.html"
+          ><span class="brand-code">&lt;/&gt;</span
+          ><span><b>Central</b><small>de Comandos</small></span></a
+        >
+        <nav class="desktop-nav">
+          <a class="active" href="index.html">Início</a
+          ><a class="" href="git.html">Git</a
+          ><a class="" href="github.html">GitHub</a
+          ><a class="" href="linux.html">Linux</a
+          ><a class="" href="xampp.html">XAMPP</a
+          ><a class="" href="frontend.html">HTML/CSS/JS</a
+          ><a class="" href="php.html">PHP</a
+          ><a class="" href="mysql.html">MySQL</a
+          ><a class="" href="node.html">Node/NPM</a
+          ><a class="" href="fluxos.html">Fluxos</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="header-btn"
+            id="globalSearchBtn"
+            title="Pesquisar"
+            type="button"
+          >
+            ⌕
+          </button>
+          <button
+            class="header-btn"
+            id="themeBtn"
+            title="Alternar tema"
+            type="button"
+          >
+            ◐
+          </button>
+          <button
+            aria-label="Abrir menu"
+            class="header-btn mobile-only"
+            id="menuBtn"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav">
+        <a class="active" href="index.html">Início</a
+        ><a class="" href="git.html">Git</a
+        ><a class="" href="github.html">GitHub</a
+        ><a class="" href="linux.html">Linux</a
+        ><a class="" href="xampp.html">XAMPP</a
+        ><a class="" href="frontend.html">HTML/CSS/JS</a
+        ><a class="" href="php.html">PHP</a
+        ><a class="" href="mysql.html">MySQL</a
+        ><a class="" href="node.html">Node/NPM</a
+        ><a class="" href="fluxos.html">Fluxos</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <span class="kicker">REFERÊNCIA RÁPIDA</span>
+          <h1>Central de Comandos</h1>
+          <p>
+            Uma central organizada para consultar comandos, exemplos e fluxos de
+            desenvolvimento.
+          </p>
+          <div class="hero-note">
+            Este site é 100% estático: HTML, CSS e JavaScript puro.
+          </div>
+        </div>
+      </section>
+      <section class="shell local-tools">
+        <div class="local-search">
+          <span>⌕</span
+          ><input
+            autocomplete="off"
+            id="pageSearch"
+            placeholder="Pesquisar nesta página..."
+            type="search"
+          /><kbd>/</kbd>
+        </div>
+        <div class="result-count">
+          <b id="resultCount">0</b> tópicos visíveis
+        </div>
+      </section>
+      <section class="shell doc-grid" id="contentGrid">
+        <a
+          class="topic-card search-item"
+          data-search="Git Versionamento local, commits, branches, merge, stash e recuperação."
+          href="git.html"
+          ><span class="topic-icon">GI</span>
+          <div>
+            <h2>Git</h2>
+            <p>
+              Versionamento local, commits, branches, merge, stash e
+              recuperação.
+            </p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="GitHub Repositórios remotos, Pages, Issues, Pull Requests e publicação."
+          href="github.html"
+          ><span class="topic-icon">GI</span>
+          <div>
+            <h2>GitHub</h2>
+            <p>
+              Repositórios remotos, Pages, Issues, Pull Requests e publicação.
+            </p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="Terminal Linux Navegação, arquivos, permissões, processos, rede e administração."
+          href="linux.html"
+          ><span class="topic-icon">TE</span>
+          <div>
+            <h2>Terminal Linux</h2>
+            <p>
+              Navegação, arquivos, permissões, processos, rede e administração.
+            </p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="XAMPP Apache, MySQL, htdocs, phpMyAdmin e diagnóstico no Linux."
+          href="xampp.html"
+          ><span class="topic-icon">XA</span>
+          <div>
+            <h2>XAMPP</h2>
+            <p>Apache, MySQL, htdocs, phpMyAdmin e diagnóstico no Linux.</p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="HTML / CSS / JavaScript Estrutura, estilos, DOM, eventos e execução direta no navegador."
+          href="frontend.html"
+          ><span class="topic-icon">HT</span>
+          <div>
+            <h2>HTML / CSS / JavaScript</h2>
+            <p>
+              Estrutura, estilos, DOM, eventos e execução direta no navegador.
+            </p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="PHP Sintaxe, formulários, sessões e execução local como conteúdo de referência."
+          href="php.html"
+          ><span class="topic-icon">PH</span>
+          <div>
+            <h2>PHP</h2>
+            <p>
+              Sintaxe, formulários, sessões e execução local como conteúdo de
+              referência.
+            </p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="MySQL DDL, DML, consultas, relacionamentos e comandos do terminal."
+          href="mysql.html"
+          ><span class="topic-icon">MY</span>
+          <div>
+            <h2>MySQL</h2>
+            <p>DDL, DML, consultas, relacionamentos e comandos do terminal.</p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="Node / NPM Pacotes, scripts e dependências como conteúdo de referência."
+          href="node.html"
+          ><span class="topic-icon">NO</span>
+          <div>
+            <h2>Node / NPM</h2>
+            <p>Pacotes, scripts e dependências como conteúdo de referência.</p>
+          </div>
+          <span class="arrow">→</span></a
+        ><a
+          class="topic-card search-item"
+          data-search="Fluxos do dia a dia Checklists completos para tarefas comuns de programação."
+          href="fluxos.html"
+          ><span class="topic-icon">FL</span>
+          <div>
+            <h2>Fluxos do dia a dia</h2>
+            <p>Checklists completos para tarefas comuns de programação.</p>
+          </div>
+          <span class="arrow">→</span></a
+        >
+        <article
+          class="profile-panel wide search-item"
+          data-search="Alexsander Daniel whatsapp instagram github contato"
+        >
+          <img
+            alt="Foto de Alexsander Daniel no GitHub"
+            src="https://avatars.githubusercontent.com/u/104946213?v=4"
+          />
+          <div>
+            <span class="kicker">AUTOR</span>
+            <h2>Alexsander Daniel</h2>
+            <p>Links rápidos para contato e projetos.</p>
+            <div class="social-buttons">
+              <a
+                href="https://wa.me/5538999306760"
+                rel="noopener"
+                target="_blank"
+                >WhatsApp</a
+              ><a
+                href="https://www.instagram.com/_alexsander_daniel_/"
+                rel="noopener"
+                target="_blank"
+                >Instagram</a
+              ><a
+                href="https://github.com/alexsanderdaniel?tab=repositories"
+                rel="noopener"
+                target="_blank"
+                >Repositórios no GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-profile">
+          <img
+            alt="Foto de Alexsander Daniel no GitHub"
+            src="https://avatars.githubusercontent.com/u/104946213?v=4"
+          />
+          <div>
+            <strong>Alexsander Daniel</strong
+            ><span>Material para consulta</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/5538999306760" rel="noopener" target="_blank"
+            >WhatsApp</a
+          ><a
+            href="https://www.instagram.com/_alexsander_daniel_/"
+            rel="noopener"
+            target="_blank"
+            >Instagram</a
+          ><a
+            href="https://github.com/alexsanderdaniel?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div aria-hidden="true" class="search-modal" id="searchModal">
+      <div class="search-dialog">
+        <div class="dialog-top">
+          <strong>Pesquisar na Central</strong
+          ><button id="closeSearch" type="button">×</button>
+        </div>
+        <input
+          id="globalSearch"
+          placeholder="Ex.: git push, localhost, SELECT, npm install..."
+          type="search"
+        />
+        <div class="global-results" id="globalResults"></div>
+        <small>Pressione Esc para fechar.</small>
+      </div>
+    </div>
+    <div class="toast" id="toast">Copiado!</div>
+    <button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">
+      ↑
+    </button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

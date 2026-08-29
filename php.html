@@ -1,48 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Consulta rápida de sintaxe e execução local de PHP. O conteúdo é exibido por HTML estático; nenhum PHP é executado neste site." name="description"/>
-<meta content="Alexsander Daniel" name="author"/>
-<title>PHP | Central de Comandos</title>
-<link href="assets/style.css" rel="stylesheet"/>
-</head>
-<body data-page="php">
-<div class="scroll-progress" id="scrollProgress"></div>
-<header class="site-header">
-<div class="shell header-row">
-<a class="brand" href="index.html"><span class="brand-code">&lt;/&gt;</span><span><b>Central</b><small>de Comandos</small></span></a>
-<nav class="desktop-nav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="active" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-<div class="header-actions">
-<button class="header-btn" id="globalSearchBtn" title="Pesquisar" type="button">⌕</button>
-<button class="header-btn" id="themeBtn" title="Alternar tema" type="button">◐</button>
-<button aria-label="Abrir menu" class="header-btn mobile-only" id="menuBtn" type="button">☰</button>
-</div>
-</div>
-<nav class="mobile-nav" id="mobileNav"><a class="" href="index.html">Início</a><a class="" href="git.html">Git</a><a class="" href="github.html">GitHub</a><a class="" href="linux.html">Linux</a><a class="" href="xampp.html">XAMPP</a><a class="" href="frontend.html">HTML/CSS/JS</a><a class="active" href="php.html">PHP</a><a class="" href="mysql.html">MySQL</a><a class="" href="node.html">Node/NPM</a><a class="" href="fluxos.html">Fluxos</a></nav>
-</header>
-<main>
-<section class="page-hero">
-<div class="shell">
-<div class="breadcrumbs"><a href="index.html">Início</a><span>/</span><span>PHP</span></div>
-<span class="kicker">REFERÊNCIA DE BACK-END</span>
-<h1>PHP</h1>
-<p>Consulta rápida de sintaxe e execução local de PHP. O conteúdo é exibido por HTML estático; nenhum PHP é executado neste site.</p>
-<div class="hero-note">O site continua 100% compatível com GitHub Pages porque os exemplos PHP aparecem apenas como texto.</div>
-</div>
-</section>
-<section class="shell local-tools">
-<div class="local-search"><span>⌕</span><input autocomplete="off" id="pageSearch" placeholder="Pesquisar nesta página..." type="search"/><kbd>/</kbd></div>
-<div class="result-count"><b id="resultCount">0</b> tópicos visíveis</div>
-</section>
-<section class="shell doc-grid" id="contentGrid"><article class="doc-card search-item wide" data-search="Importante: PHP e GitHub Pages github pages php nao executa"><div class="card-title"><span class="badge">Atenção</span><h2>Importante: PHP e GitHub Pages</h2></div><div class="callout warning"><strong>Conteúdo de referência</strong><p>Esta página é apenas documentação estática. O GitHub Pages <strong>não executa PHP</strong>. Para rodar PHP, use XAMPP, servidor PHP local ou uma hospedagem compatível.</p></div></article><article class="doc-card search-item" data-search="Sintaxe básica php variavel echo sintaxe"><div class="card-title"><span class="badge">PHP</span><h2>Sintaxe básica</h2></div><div class="code-box"><div class="code-top"><span>PHP</span><button class="copy" type="button">Copiar</button></div><pre><code>&lt;?php
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Consulta rápida de sintaxe e execução local de PHP. O conteúdo é exibido por HTML estático; nenhum PHP é executado neste site."
+      name="description"
+    />
+    <meta content="Alexsander Daniel" name="author" />
+    <title>PHP | Central de Comandos</title>
+    <link href="assets/style.css" rel="stylesheet" />
+  </head>
+  <body data-page="php">
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="index.html"
+          ><span class="brand-code">&lt;/&gt;</span
+          ><span><b>Central</b><small>de Comandos</small></span></a
+        >
+        <nav class="desktop-nav">
+          <a class="" href="index.html">Início</a
+          ><a class="" href="git.html">Git</a
+          ><a class="" href="github.html">GitHub</a
+          ><a class="" href="linux.html">Linux</a
+          ><a class="" href="xampp.html">XAMPP</a
+          ><a class="" href="frontend.html">HTML/CSS/JS</a
+          ><a class="active" href="php.html">PHP</a
+          ><a class="" href="mysql.html">MySQL</a
+          ><a class="" href="node.html">Node/NPM</a
+          ><a class="" href="fluxos.html">Fluxos</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="header-btn"
+            id="globalSearchBtn"
+            title="Pesquisar"
+            type="button"
+          >
+            ⌕
+          </button>
+          <button
+            class="header-btn"
+            id="themeBtn"
+            title="Alternar tema"
+            type="button"
+          >
+            ◐
+          </button>
+          <button
+            aria-label="Abrir menu"
+            class="header-btn mobile-only"
+            id="menuBtn"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobileNav">
+        <a class="" href="index.html">Início</a
+        ><a class="" href="git.html">Git</a
+        ><a class="" href="github.html">GitHub</a
+        ><a class="" href="linux.html">Linux</a
+        ><a class="" href="xampp.html">XAMPP</a
+        ><a class="" href="frontend.html">HTML/CSS/JS</a
+        ><a class="active" href="php.html">PHP</a
+        ><a class="" href="mysql.html">MySQL</a
+        ><a class="" href="node.html">Node/NPM</a
+        ><a class="" href="fluxos.html">Fluxos</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="shell">
+          <div class="breadcrumbs">
+            <a href="index.html">Início</a><span>/</span><span>PHP</span>
+          </div>
+          <span class="kicker">REFERÊNCIA DE BACK-END</span>
+          <h1>PHP</h1>
+          <p>
+            Consulta rápida de sintaxe e execução local de PHP. O conteúdo é
+            exibido por HTML estático; nenhum PHP é executado neste site.
+          </p>
+          <div class="hero-note">
+            O site continua 100% compatível com GitHub Pages porque os exemplos
+            PHP aparecem apenas como texto.
+          </div>
+        </div>
+      </section>
+      <section class="shell local-tools">
+        <div class="local-search">
+          <span>⌕</span
+          ><input
+            autocomplete="off"
+            id="pageSearch"
+            placeholder="Pesquisar nesta página..."
+            type="search"
+          /><kbd>/</kbd>
+        </div>
+        <div class="result-count">
+          <b id="resultCount">0</b> tópicos visíveis
+        </div>
+      </section>
+      <section class="shell doc-grid" id="contentGrid">
+        <article
+          class="doc-card search-item wide"
+          data-search="Importante: PHP e GitHub Pages github pages php nao executa"
+        >
+          <div class="card-title">
+            <span class="badge">Atenção</span>
+            <h2>Importante: PHP e GitHub Pages</h2>
+          </div>
+          <div class="callout warning">
+            <strong>Conteúdo de referência</strong>
+            <p>
+              Esta página é apenas documentação estática. O GitHub Pages
+              <strong>não executa PHP</strong>. Para rodar PHP, use XAMPP,
+              servidor PHP local ou uma hospedagem compatível.
+            </p>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Sintaxe básica php variavel echo sintaxe"
+        >
+          <div class="card-title">
+            <span class="badge">PHP</span>
+            <h2>Sintaxe básica</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>PHP</span><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>&lt;?php
 $nome = "Alexsander";
 $idade = 25;
 
 echo "Olá, " . $nome;
-?&gt;</code></pre></div></article><article class="doc-card search-item" data-search="Condições e repetição if for loop condição"><div class="card-title"><span class="badge">PHP</span><h2>Condições e repetição</h2></div><div class="code-box"><div class="code-top"><span>PHP</span><button class="copy" type="button">Copiar</button></div><pre><code>&lt;?php
+?&gt;</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Condições e repetição if for loop condição"
+        >
+          <div class="card-title">
+            <span class="badge">PHP</span>
+            <h2>Condições e repetição</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>PHP</span><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>&lt;?php
 if ($idade &gt;= 18) {
     echo "Maior de idade";
 }
@@ -50,26 +162,160 @@ if ($idade &gt;= 18) {
 for ($i = 1; $i &lt;= 5; $i++) {
     echo $i;
 }
-?&gt;</code></pre></div></article><article class="doc-card search-item" data-search="Receber formulário post get formulario htmlspecialchars trim"><div class="card-title"><span class="badge">Formulários</span><h2>Receber formulário</h2></div><div class="code-box"><div class="code-top"><span>PHP</span><button class="copy" type="button">Copiar</button></div><pre><code>&lt;?php
+?&gt;</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Receber formulário post get formulario htmlspecialchars trim"
+        >
+          <div class="card-title">
+            <span class="badge">Formulários</span>
+            <h2>Receber formulário</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>PHP</span><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>&lt;?php
 $nome = $_POST['nome'] ?? '';
 $nome = trim($nome);
 
 echo htmlspecialchars($nome);
-?&gt;</code></pre></div><div class="callout info"><strong>Boa prática</strong><p>Valide os dados recebidos e escape a saída exibida em HTML.</p></div></article><article class="doc-card search-item" data-search="Sessão session session_start login"><div class="card-title"><span class="badge">Sessões</span><h2>Sessão</h2></div><div class="code-box"><div class="code-top"><span>PHP</span><button class="copy" type="button">Copiar</button></div><pre><code>&lt;?php
+?&gt;</code></pre>
+          </div>
+          <div class="callout info">
+            <strong>Boa prática</strong>
+            <p>Valide os dados recebidos e escape a saída exibida em HTML.</p>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Sessão session session_start login"
+        >
+          <div class="card-title">
+            <span class="badge">Sessões</span>
+            <h2>Sessão</h2>
+          </div>
+          <div class="code-box">
+            <div class="code-top">
+              <span>PHP</span><button class="copy" type="button">Copiar</button>
+            </div>
+            <pre><code>&lt;?php
 session_start();
 $_SESSION['usuario'] = 'Alexsander';
 echo $_SESSION['usuario'];
-?&gt;</code></pre></div></article><article class="doc-card search-item" data-search="Executar localmente php -S localhost servidor local"><div class="card-title"><span class="badge">Terminal</span><h2>Executar localmente</h2></div><div class="cmd-row"><code>php -v</code><span>Confere a versão instalada.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>php arquivo.php</code><span>Executa um script no terminal.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="cmd-row"><code>php -S localhost:8000</code><span>Inicia o servidor de desenvolvimento embutido.</span><button aria-label="Copiar comando" class="mini-copy" type="button">⧉</button></div><div class="url-line"><code>http://localhost:8000</code></div></article><article class="doc-card search-item" data-search="PHP com XAMPP xampp htdocs localhost php"><div class="card-title"><span class="badge">XAMPP</span><h2>PHP com XAMPP</h2></div><p>Coloque o projeto em <code>/opt/lampp/htdocs/NOME_DO_PROJETO</code>, inicie o XAMPP e abra:</p><div class="url-line"><code>http://localhost/NOME_DO_PROJETO/</code></div></article></section>
-</main>
-<footer class="site-footer">
-<div class="shell footer-grid">
-<div class="footer-profile"><img alt="Foto de Alexsander Daniel no GitHub" src="https://avatars.githubusercontent.com/u/104946213?v=4"/><div><strong>Alexsander Daniel</strong><span>Material para consulta</span></div></div>
-<div class="footer-social"><a href="https://wa.me/5538999306760" rel="noopener" target="_blank">WhatsApp</a><a href="https://www.instagram.com/_alexsander_daniel_/" rel="noopener" target="_blank">Instagram</a><a href="https://github.com/alexsanderdaniel?tab=repositories" rel="noopener" target="_blank">GitHub</a></div>
-</div>
-
-</footer>
-<div aria-hidden="true" class="search-modal" id="searchModal"><div class="search-dialog"><div class="dialog-top"><strong>Pesquisar na Central</strong><button id="closeSearch" type="button">×</button></div><input id="globalSearch" placeholder="Ex.: git push, localhost, SELECT, npm install..." type="search"/><div class="global-results" id="globalResults"></div><small>Pressione Esc para fechar.</small></div></div>
-<div class="toast" id="toast">Copiado!</div>
-<button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">↑</button>
-<script src="assets/script.js"></script>
-</body></html>
+?&gt;</code></pre>
+          </div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="Executar localmente php -S localhost servidor local"
+        >
+          <div class="card-title">
+            <span class="badge">Terminal</span>
+            <h2>Executar localmente</h2>
+          </div>
+          <div class="cmd-row">
+            <code>php -v</code><span>Confere a versão instalada.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>php arquivo.php</code
+            ><span>Executa um script no terminal.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="cmd-row">
+            <code>php -S localhost:8000</code
+            ><span>Inicia o servidor de desenvolvimento embutido.</span
+            ><button
+              aria-label="Copiar comando"
+              class="mini-copy"
+              type="button"
+            >
+              ⧉
+            </button>
+          </div>
+          <div class="url-line"><code>http://localhost:8000</code></div>
+        </article>
+        <article
+          class="doc-card search-item"
+          data-search="PHP com XAMPP xampp htdocs localhost php"
+        >
+          <div class="card-title">
+            <span class="badge">XAMPP</span>
+            <h2>PHP com XAMPP</h2>
+          </div>
+          <p>
+            Coloque o projeto em <code>/opt/lampp/htdocs/NOME_DO_PROJETO</code>,
+            inicie o XAMPP e abra:
+          </p>
+          <div class="url-line">
+            <code>http://localhost/NOME_DO_PROJETO/</code>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-profile">
+          <img
+            alt="Foto de Alexsander Daniel no GitHub"
+            src="https://avatars.githubusercontent.com/u/104946213?v=4"
+          />
+          <div>
+            <strong>Alexsander Daniel</strong
+            ><span>Material para consulta</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/5538999306760" rel="noopener" target="_blank"
+            >WhatsApp</a
+          ><a
+            href="https://www.instagram.com/_alexsander_daniel_/"
+            rel="noopener"
+            target="_blank"
+            >Instagram</a
+          ><a
+            href="https://github.com/alexsanderdaniel?tab=repositories"
+            rel="noopener"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div aria-hidden="true" class="search-modal" id="searchModal">
+      <div class="search-dialog">
+        <div class="dialog-top">
+          <strong>Pesquisar na Central</strong
+          ><button id="closeSearch" type="button">×</button>
+        </div>
+        <input
+          id="globalSearch"
+          placeholder="Ex.: git push, localhost, SELECT, npm install..."
+          type="search"
+        />
+        <div class="global-results" id="globalResults"></div>
+        <small>Pressione Esc para fechar.</small>
+      </div>
+    </div>
+    <div class="toast" id="toast">Copiado!</div>
+    <button aria-label="Voltar ao topo" class="to-top" id="toTop" type="button">
+      ↑
+    </button>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
